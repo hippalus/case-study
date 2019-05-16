@@ -1,0 +1,1111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="b0973566-935c-4c3c-b99c-e7ada445c69a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/trendyol-cases/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/trendyol-cases/shopping-cart/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/trendyol-cases/shopping-cart/src/main/java/com/trendyol/shoppingcart/ShoppingCartApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/trendyol-cases/shopping-cart/src/main/java/com/trendyol/shoppingcart/cart/ShoppingCart.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/trendyol-cases/shopping-cart/src/main/java/com/trendyol/shoppingcart/discountbehavior/DiscountBehavior.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/trendyol-cases/shopping-cart/src/main/java/com/trendyol/shoppingcart/discountbehavior/DiscountWithCampaign.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/trendyol-cases/shopping-cart/src/main/java/com/trendyol/shoppingcart/discountbehavior/DiscountWithCoupon.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/trendyol-cases/shopping-cart/src/main/java/com/trendyol/shoppingcart/enums/DiscountType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/trendyol-cases/shopping-cart/src/main/java/com/trendyol/shoppingcart/exception/ApiExceptionHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/trendyol-cases/shopping-cart/src/main/java/com/trendyol/shoppingcart/model/Campaign.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/trendyol-cases/shopping-cart/src/main/java/com/trendyol/shoppingcart/model/Category.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/trendyol-cases/shopping-cart/src/main/java/com/trendyol/shoppingcart/model/Coupon.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/trendyol-cases/shopping-cart/src/main/java/com/trendyol/shoppingcart/model/Delivery.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/trendyol-cases/shopping-cart/src/main/java/com/trendyol/shoppingcart/model/ICategory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/trendyol-cases/shopping-cart/src/main/java/com/trendyol/shoppingcart/model/IProduct.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/trendyol-cases/shopping-cart/src/main/java/com/trendyol/shoppingcart/model/Product.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/trendyol-cases/shopping-cart/src/main/java/com/trendyol/shoppingcart/model/ShoppingCart.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/trendyol-cases/shopping-cart/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/trendyol-cases/shopping-cart/src/test/java/com/trendyol/shoppingcart/model/CategoryTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/trendyol-cases/shopping-cart/src/test/java/com/trendyol/shoppingcart/model/ProductTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/trendyol-cases/shopping-cart/src/test/java/com/trendyol/shoppingcart/model/ShoppingCartTest.java" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/shopping-cart/target/" />
+    <ignored path="$PROJECT_DIR$/trendyol-cases/target/" />
+    <ignored path="$PROJECT_DIR$/trendyol-cases/shopping-cart/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/case_study$CategoryTest.ic" NAME="CategoryTest Coverage Results" MODIFIED="1558012408670" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.trendyol.shoppingcart.model.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/case_study$ProductTest_getCategory.ic" NAME="ProductTest.getCategory Coverage Results" MODIFIED="1558007865842" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.trendyol.shoppingcart.model.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/case_study$com_trendyol_shoppingcart_model_in_shopping_cart.ic" NAME="com.trendyol.shoppingcart.model in shopping-cart Coverage Results" MODIFIED="1558012654154" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.trendyol.shoppingcart.model.*</FILTER>
+    </SUITE>
+  </component>
+  <component name="CoverageViewManager">
+    <option name="myFlattenPackages" value="true" />
+    <option name="myAutoScrollToSource" value="true" />
+    <option name="myAutoScrollFromSource" value="true" />
+    <option name="myElementSize" value="223" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/trendyol-cases/shopping-cart/src/main/java/com/trendyol/shoppingcart/model/ShoppingCart.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="10" column="2" lean-forward="true" selection-start-line="10" selection-start-column="2" selection-end-line="10" selection-end-column="56" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#2406#2407#0" expanded="true" />
+                <element signature="e#2444#2445#0" expanded="true" />
+                <element signature="e#2484#2485#0" expanded="true" />
+                <element signature="e#2508#2509#0" expanded="true" />
+                <element signature="e#2562#2563#0" expanded="true" />
+                <element signature="e#2595#2596#0" expanded="true" />
+                <element signature="e#2661#2662#0" expanded="true" />
+                <element signature="e#2705#2706#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/trendyol-cases/shopping-cart/src/main/java/com/trendyol/shoppingcart/cart/ShoppingCart.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="178">
+              <caret line="12" column="57" selection-start-line="12" selection-start-column="57" selection-end-line="12" selection-end-column="57" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#244#245#0" expanded="true" />
+                <element signature="e#284#285#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/trendyol-cases/shopping-cart/src/main/java/com/trendyol/shoppingcart/exception/ApiExceptionHandler.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/trendyol-cases/shopping-cart/src/test/java/com/trendyol/shoppingcart/model/ProductTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="237">
+              <caret line="53" column="54" selection-start-line="53" selection-start-column="54" selection-end-line="53" selection-end-column="54" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/trendyol-cases/shopping-cart/src/main/java/com/trendyol/shoppingcart/model/ICategory.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="171">
+              <caret line="12" column="19" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="19" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/trendyol-cases/shopping-cart/src/main/java/com/trendyol/shoppingcart/model/Category.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="359">
+              <caret line="43" selection-start-line="43" selection-end-line="43" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#309#310#0" expanded="true" />
+                <element signature="e#343#344#0" expanded="true" />
+                <element signature="e#808#809#0" expanded="true" />
+                <element signature="e#852#853#0" expanded="true" />
+                <element signature="e#1149#1150#0" expanded="true" />
+                <element signature="e#1183#1184#0" expanded="true" />
+                <element signature="e#1246#1247#0" expanded="true" />
+                <element signature="e#1298#1299#0" expanded="true" />
+                <element signature="e#1368#1369#0" expanded="true" />
+                <element signature="e#1422#1423#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/trendyol-cases/shopping-cart/src/test/java/com/trendyol/shoppingcart/model/CategoryTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1800">
+              <caret line="81" column="40" lean-forward="true" selection-start-line="81" selection-start-column="40" selection-end-line="81" selection-end-column="40" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/trendyol-cases/shopping-cart/src/main/java/com/trendyol/shoppingcart/model/IProduct.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="312">
+              <caret line="19" column="15" selection-start-line="19" selection-start-column="15" selection-end-line="19" selection-end-column="15" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/trendyol-cases/shopping-cart/src/main/java/com/trendyol/shoppingcart/model/Product.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-216">
+              <caret line="9" column="25" lean-forward="true" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="25" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#981#982#0" expanded="true" />
+                <element signature="e#1019#1020#0" expanded="true" />
+                <element signature="e#1182#1183#0" expanded="true" />
+                <element signature="e#1213#1214#0" expanded="true" />
+                <element signature="e#1330#1331#0" expanded="true" />
+                <element signature="e#1354#1355#0" expanded="true" />
+                <element signature="e#1408#1409#0" expanded="true" />
+                <element signature="e#1432#1433#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/trendyol-cases/shopping-cart/src/test/java/com/trendyol/shoppingcart/model/ShoppingCartTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="144">
+              <caret line="6" column="26" lean-forward="true" selection-start-line="6" selection-start-column="26" selection-end-line="6" selection-end-column="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Arquillian JUnit Test Class" />
+        <option value="JUnit4 Test Class" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>add</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/trendyol-cases/pom.xml" />
+        <option value="$PROJECT_DIR$/trendyol-cases/shopping-cart/src/main/java/com/trendyol/shoppingcart/ShoppingCartApplication.java" />
+        <option value="$PROJECT_DIR$/trendyol-cases/shopping-cart/src/main/java/com/trendyol/shoppingcart/model/Coupons.java" />
+        <option value="$PROJECT_DIR$/trendyol-cases/shopping-cart/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/trendyol-cases/shopping-cart/src/main/java/com/trendyol/shoppingcart/exception/ApiExceptionHandler.java" />
+        <option value="$PROJECT_DIR$/trendyol-cases/shopping-cart/pom.xml" />
+        <option value="$PROJECT_DIR$/trendyol-cases/shopping-cart/src/main/java/com/trendyol/shoppingcart/discountbehavior/IDiscountBehavior.java" />
+        <option value="$PROJECT_DIR$/trendyol-cases/shopping-cart/src/main/java/com/trendyol/shoppingcart/enums/DiscountType.java" />
+        <option value="$PROJECT_DIR$/trendyol-cases/shopping-cart/src/main/java/com/trendyol/shoppingcart/discountbehavior/DiscountBehavior.java" />
+        <option value="$PROJECT_DIR$/trendyol-cases/shopping-cart/src/main/java/com/trendyol/shoppingcart/discountbehavior/DiscountWithCampaign.java" />
+        <option value="$PROJECT_DIR$/trendyol-cases/shopping-cart/src/main/java/com/trendyol/shoppingcart/model/Campaign.java" />
+        <option value="$PROJECT_DIR$/trendyol-cases/shopping-cart/src/main/java/com/trendyol/shoppingcart/discountbehavior/DiscountWithCoupon.java" />
+        <option value="$PROJECT_DIR$/trendyol-cases/shopping-cart/src/main/java/com/trendyol/shoppingcart/model/Coupon.java" />
+        <option value="$PROJECT_DIR$/trendyol-cases/shopping-cart/src/test/java/com/trendyol/shoppingcart/model/ShoppingCartTest.java" />
+        <option value="$PROJECT_DIR$/trendyol-cases/shopping-cart/src/main/java/com/trendyol/shoppingcart/model/ICategory.java" />
+        <option value="$PROJECT_DIR$/trendyol-cases/shopping-cart/src/main/java/com/trendyol/shoppingcart/model/Category.java" />
+        <option value="$PROJECT_DIR$/trendyol-cases/shopping-cart/src/test/java/com/trendyol/shoppingcart/model/CategoryTest.java" />
+        <option value="$PROJECT_DIR$/trendyol-cases/shopping-cart/src/main/java/com/trendyol/shoppingcart/model/Item.java" />
+        <option value="$PROJECT_DIR$/trendyol-cases/shopping-cart/src/main/java/com/trendyol/shoppingcart/model/IProduct.java" />
+        <option value="$PROJECT_DIR$/trendyol-cases/shopping-cart/src/main/java/com/trendyol/shoppingcart/model/Product.java" />
+        <option value="$PROJECT_DIR$/trendyol-cases/shopping-cart/src/test/java/com/trendyol/shoppingcart/model/ProductTest.java" />
+        <option value="$PROJECT_DIR$/trendyol-cases/shopping-cart/src/main/java/com/trendyol/shoppingcart/model/ShoppingCart.java" />
+        <option value="$PROJECT_DIR$/trendyol-cases/shopping-cart/src/main/java/com/trendyol/shoppingcart/cart/ShoppingCart.java" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="shopping-cart" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="shopping-cart" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
+        </path>
+      </expand>
+      <select />
+    </treeState>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="-604" />
+    <option name="y" value="223" />
+    <option name="width" value="1880" />
+    <option name="height" value="789" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="case-study" type="b2602c69:ProjectViewProjectNode" />
+              <item name="case-study" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="case-study" type="b2602c69:ProjectViewProjectNode" />
+              <item name="case-study" type="462c0819:PsiDirectoryNode" />
+              <item name="trendyol-cases" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="case-study" type="b2602c69:ProjectViewProjectNode" />
+              <item name="case-study" type="462c0819:PsiDirectoryNode" />
+              <item name="trendyol-cases" type="462c0819:PsiDirectoryNode" />
+              <item name="shopping-cart" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="case-study" type="b2602c69:ProjectViewProjectNode" />
+              <item name="case-study" type="462c0819:PsiDirectoryNode" />
+              <item name="trendyol-cases" type="462c0819:PsiDirectoryNode" />
+              <item name="shopping-cart" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="case-study" type="b2602c69:ProjectViewProjectNode" />
+              <item name="case-study" type="462c0819:PsiDirectoryNode" />
+              <item name="trendyol-cases" type="462c0819:PsiDirectoryNode" />
+              <item name="shopping-cart" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="case-study" type="b2602c69:ProjectViewProjectNode" />
+              <item name="case-study" type="462c0819:PsiDirectoryNode" />
+              <item name="trendyol-cases" type="462c0819:PsiDirectoryNode" />
+              <item name="shopping-cart" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="case-study" type="b2602c69:ProjectViewProjectNode" />
+              <item name="case-study" type="462c0819:PsiDirectoryNode" />
+              <item name="trendyol-cases" type="462c0819:PsiDirectoryNode" />
+              <item name="shopping-cart" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="shoppingcart" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="case-study" type="b2602c69:ProjectViewProjectNode" />
+              <item name="case-study" type="462c0819:PsiDirectoryNode" />
+              <item name="trendyol-cases" type="462c0819:PsiDirectoryNode" />
+              <item name="shopping-cart" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="shoppingcart" type="462c0819:PsiDirectoryNode" />
+              <item name="discountbehavior" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="case-study" type="b2602c69:ProjectViewProjectNode" />
+              <item name="case-study" type="462c0819:PsiDirectoryNode" />
+              <item name="trendyol-cases" type="462c0819:PsiDirectoryNode" />
+              <item name="shopping-cart" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="shoppingcart" type="462c0819:PsiDirectoryNode" />
+              <item name="enums" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="case-study" type="b2602c69:ProjectViewProjectNode" />
+              <item name="case-study" type="462c0819:PsiDirectoryNode" />
+              <item name="trendyol-cases" type="462c0819:PsiDirectoryNode" />
+              <item name="shopping-cart" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="shoppingcart" type="462c0819:PsiDirectoryNode" />
+              <item name="exception" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="case-study" type="b2602c69:ProjectViewProjectNode" />
+              <item name="case-study" type="462c0819:PsiDirectoryNode" />
+              <item name="trendyol-cases" type="462c0819:PsiDirectoryNode" />
+              <item name="shopping-cart" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="shoppingcart" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="case-study" type="b2602c69:ProjectViewProjectNode" />
+              <item name="case-study" type="462c0819:PsiDirectoryNode" />
+              <item name="trendyol-cases" type="462c0819:PsiDirectoryNode" />
+              <item name="shopping-cart" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="case-study" type="b2602c69:ProjectViewProjectNode" />
+              <item name="case-study" type="462c0819:PsiDirectoryNode" />
+              <item name="trendyol-cases" type="462c0819:PsiDirectoryNode" />
+              <item name="shopping-cart" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="case-study" type="b2602c69:ProjectViewProjectNode" />
+              <item name="case-study" type="462c0819:PsiDirectoryNode" />
+              <item name="trendyol-cases" type="462c0819:PsiDirectoryNode" />
+              <item name="shopping-cart" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="case-study" type="b2602c69:ProjectViewProjectNode" />
+              <item name="case-study" type="462c0819:PsiDirectoryNode" />
+              <item name="trendyol-cases" type="462c0819:PsiDirectoryNode" />
+              <item name="shopping-cart" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="PackagesPane" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1558017260680" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.Arquillian JUnit4" value="" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
+    <property name="jdk.selected.JAVA_MODULE" value="1.8" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../DPWorkspace" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="SDKs" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.trendyol.shoppingcart.model" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/trendyol-cases" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="JUnit.ProductTest.priceForQuantity">
+    <configuration name="CategoryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="shopping-cart" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.trendyol.shoppingcart.model.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.trendyol.shoppingcart.model" />
+      <option name="MAIN_CLASS_NAME" value="com.trendyol.shoppingcart.model.CategoryTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CategoryTest.setChildCategories" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="shopping-cart" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.trendyol.shoppingcart.model.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.trendyol.shoppingcart.model" />
+      <option name="MAIN_CLASS_NAME" value="com.trendyol.shoppingcart.model.CategoryTest" />
+      <option name="METHOD_NAME" value="setChildCategories" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ProductTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="shopping-cart" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.trendyol.shoppingcart.model.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.trendyol.shoppingcart.model" />
+      <option name="MAIN_CLASS_NAME" value="com.trendyol.shoppingcart.model.ProductTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ProductTest.priceForQuantity" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="shopping-cart" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.trendyol.shoppingcart.model.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.trendyol.shoppingcart.model" />
+      <option name="MAIN_CLASS_NAME" value="com.trendyol.shoppingcart.model.ProductTest" />
+      <option name="METHOD_NAME" value="priceForQuantity" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="com.trendyol.shoppingcart.model in shopping-cart" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="shopping-cart" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.trendyol.shoppingcart.model.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.trendyol.shoppingcart.model" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.ProductTest.priceForQuantity" />
+        <item itemvalue="JUnit.com.trendyol.shoppingcart.model in shopping-cart" />
+        <item itemvalue="JUnit.ProductTest" />
+        <item itemvalue="JUnit.CategoryTest" />
+        <item itemvalue="JUnit.CategoryTest.setChildCategories" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b0973566-935c-4c3c-b99c-e7ada445c69a" name="Default Changelist" comment="" />
+      <created>1557833418718</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1557833418718</updated>
+      <workItem from="1557833420072" duration="16453000" />
+      <workItem from="1557948314248" duration="29049000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TestHistory">
+    <history-entry file="CategoryTest_getALlCategory - 2019.05.16 at 16h 09m 05s.xml">
+      <configuration name="CategoryTest.getALlCategory" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CategoryTest_setTitle - 2019.05.16 at 16h 12m 48s.xml">
+      <configuration name="CategoryTest.setTitle" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CategoryTest - 2019.05.16 at 16h 12m 58s.xml">
+      <configuration name="CategoryTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CategoryTest - 2019.05.16 at 16h 13m 29s.xml">
+      <configuration name="CategoryTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CategoryTest_setParentCategory - 2019.05.16 at 16h 14m 57s.xml">
+      <configuration name="CategoryTest.setParentCategory" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CategoryTest_setChildCategories - 2019.05.16 at 16h 16m 20s.xml">
+      <configuration name="CategoryTest.setChildCategories" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CategoryTest - 2019.05.16 at 16h 16m 35s.xml">
+      <configuration name="CategoryTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ProductTest - 2019.05.16 at 16h 16m 55s.xml">
+      <configuration name="ProductTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="com_trendyol_shoppingcart_model_in_shopping-cart - 2019.05.16 at 16h 17m 35s.xml">
+      <configuration name="com.trendyol.shoppingcart.model in shopping-cart" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ProductTest_priceForQuantity - 2019.05.16 at 16h 44m 06s.xml">
+      <configuration name="ProductTest.priceForQuantity" configurationId="JUnit" />
+    </history-entry>
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="45502000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="27" width="1920" height="1053" extended-state="6" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20405982" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="Capture Tool" order="4" />
+      <window_info id="UI Designer" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info id="Web" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.35254237" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.36723164" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Spring" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.3299435" />
+      <window_info anchor="bottom" id="Docker" order="9" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.36723164" />
+      <window_info anchor="bottom" id="Java Enterprise" order="12" />
+      <window_info anchor="bottom" id="Database Changes" order="13" />
+      <window_info anchor="bottom" id="Version Control" order="14" />
+      <window_info anchor="right" id="Coverage" side_tool="true" weight="0.3846154" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Maven" order="3" weight="0.31196582" />
+      <window_info anchor="right" id="Palette" order="4" />
+      <window_info anchor="right" id="Capture Analysis" order="5" />
+      <window_info anchor="right" id="Database" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Theme Preview" order="8" />
+      <window_info anchor="right" id="Bean Validation" order="9" />
+    </layout>
+    <layout-to-restore>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.09081197" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="Capture Tool" order="4" />
+      <window_info id="UI Designer" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info id="Web" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.35254237" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.40677965" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Spring" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.3299435" />
+      <window_info anchor="bottom" id="Docker" order="9" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.36723164" />
+      <window_info anchor="bottom" id="Java Enterprise" order="12" />
+      <window_info anchor="bottom" id="Database Changes" order="13" />
+      <window_info anchor="bottom" id="Version Control" order="14" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Maven" order="3" weight="0.31196582" />
+      <window_info anchor="right" id="Palette" order="4" />
+      <window_info anchor="right" id="Capture Analysis" order="5" />
+      <window_info anchor="right" id="Database" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Theme Preview" order="8" />
+      <window_info anchor="right" id="Bean Validation" order="9" />
+    </layout-to-restore>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/trendyol-cases/shopping-cart/src/main/java/com/trendyol/shoppingcart/model/ShoppingCart.java</url>
+          <line>78</line>
+          <properties />
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/trendyol-cases/shopping-cart/src/test/java/com/trendyol/shoppingcart/model/ShoppingCartTest.java</url>
+          <line>34</line>
+          <properties />
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/trendyol-cases/shopping-cart/src/main/java/com/trendyol/shoppingcart/model/ShoppingCart.java</url>
+          <line>74</line>
+          <properties />
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/trendyol-cases/shopping-cart/src/main/java/com/trendyol/shoppingcart/model/ShoppingCart.java</url>
+          <line>53</line>
+          <properties />
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/trendyol-cases/shopping-cart/src/main/java/com/trendyol/shoppingcart/model/ShoppingCart.java</url>
+          <line>48</line>
+          <properties />
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/trendyol-cases/shopping-cart/src/main/java/com/trendyol/shoppingcart/model/ShoppingCart.java</url>
+          <line>77</line>
+          <properties />
+          <option name="timeStamp" value="18" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/trendyol-cases/shopping-cart/src/main/java/com/trendyol/shoppingcart/model/Product.java</url>
+          <line>36</line>
+          <properties />
+          <option name="timeStamp" value="24" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/trendyol-cases/shopping-cart/src/test/java/com/trendyol/shoppingcart/model/ProductTest.java</url>
+          <line>32</line>
+          <properties />
+          <option name="timeStamp" value="30" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/trendyol-cases/shopping-cart/src/test/java/com/trendyol/shoppingcart/model/CategoryTest.java</url>
+          <line>61</line>
+          <properties />
+          <option name="timeStamp" value="33" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/trendyol-cases/shopping-cart/src/main/java/com/trendyol/shoppingcart/model/Category.java</url>
+          <line>41</line>
+          <properties />
+          <option name="timeStamp" value="34" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/trendyol-cases/shopping-cart/src/test/java/com/trendyol/shoppingcart/model/CategoryTest.java</url>
+          <line>68</line>
+          <properties />
+          <option name="timeStamp" value="36" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="debuggerHistoryManager">
+    <expressions id="evaluateExpression">
+      <expression>
+        <expression-string>this.products.stream().collect(Collectors.groupingBy(p-&gt;p.getCategory()))</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="jar:///usr/local/java/jdk1.8.0_191/jre/lib/javaws.jar!/com/sun/javaws/exceptions/ErrorCodeResponseException.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="22" column="11" selection-start-line="22" selection-start-column="11" selection-end-line="22" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/trendyol-cases/shopping-cart/src/main/java/com/trendyol/shoppingcart/ShoppingCartApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="66" selection-start-line="8" selection-start-column="66" selection-end-line="8" selection-end-column="66" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#262#263#0" expanded="true" />
+            <element signature="e#335#336#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/trendyol-cases/shopping-cart/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="12" selection-start-line="11" selection-start-column="12" selection-end-line="11" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/trendyol-cases/shopping-cart/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="179">
+          <caret line="24" selection-start-line="24" selection-end-line="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/runners/BlockJUnit4ClassRunner.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="277">
+          <caret line="152" selection-start-line="152" selection-end-line="152" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/trendyol-cases/shopping-cart/src/main/java/com/trendyol/shoppingcart/model/Delivery.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="21" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/internal/runners/statements/InvokeMethod.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="21" selection-start-line="21" selection-end-line="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/trendyol-cases/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="11" column="16" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/trendyol-cases/shopping-cart/src/main/java/com/trendyol/shoppingcart/enums/DiscountType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/trendyol-cases/shopping-cart/src/main/java/com/trendyol/shoppingcart/discountbehavior/DiscountBehavior.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="6" column="37" selection-start-line="6" selection-start-column="37" selection-end-line="6" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/trendyol-cases/shopping-cart/src/main/java/com/trendyol/shoppingcart/model/Campaign.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="20" column="46" selection-start-line="20" selection-start-column="46" selection-end-line="20" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///usr/local/java/jdk1.8.0_191/src.zip!/java/util/Set.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="212">
+          <caret line="224" column="12" selection-start-line="224" selection-start-column="12" selection-end-line="224" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/trendyol-cases/shopping-cart/src/main/java/com/trendyol/shoppingcart/model/Coupon.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="18" column="24" selection-start-line="18" selection-start-column="24" selection-end-line="18" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/trendyol-cases/shopping-cart/src/main/java/com/trendyol/shoppingcart/discountbehavior/DiscountWithCampaign.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="278">
+          <caret line="25" column="35" lean-forward="true" selection-start-line="25" selection-start-column="35" selection-end-line="25" selection-end-column="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/trendyol-cases/shopping-cart/src/main/java/com/trendyol/shoppingcart/discountbehavior/DiscountWithCoupon.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="384">
+          <caret line="16" column="48" lean-forward="true" selection-start-line="16" selection-start-column="48" selection-end-line="16" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/internal/runners/statements/RunBefores.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="429">
+          <caret line="28" selection-start-line="28" selection-end-line="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///usr/local/java/jdk1.8.0_191/src.zip!/java/util/AbstractCollection.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="164">
+          <caret line="342" selection-start-line="342" selection-end-line="342" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/runners/ParentRunner.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="373">
+          <caret line="202" selection-start-line="202" selection-end-line="202" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/internal/runners/model/ReflectiveCallable.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/runners/model/FrameworkMethod.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="404">
+          <caret line="31" selection-start-line="31" selection-end-line="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/trendyol-cases/shopping-cart/src/main/java/com/trendyol/shoppingcart/model/Category.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="359">
+          <caret line="43" selection-start-line="43" selection-end-line="43" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#309#310#0" expanded="true" />
+            <element signature="e#343#344#0" expanded="true" />
+            <element signature="e#808#809#0" expanded="true" />
+            <element signature="e#852#853#0" expanded="true" />
+            <element signature="e#1149#1150#0" expanded="true" />
+            <element signature="e#1183#1184#0" expanded="true" />
+            <element signature="e#1246#1247#0" expanded="true" />
+            <element signature="e#1298#1299#0" expanded="true" />
+            <element signature="e#1368#1369#0" expanded="true" />
+            <element signature="e#1422#1423#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/trendyol-cases/shopping-cart/src/main/java/com/trendyol/shoppingcart/model/ICategory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="12" column="19" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/trendyol-cases/shopping-cart/src/test/java/com/trendyol/shoppingcart/model/CategoryTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1800">
+          <caret line="81" column="40" lean-forward="true" selection-start-line="81" selection-start-column="40" selection-end-line="81" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/trendyol-cases/shopping-cart/shopping-cart.iml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1739" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/trendyol-cases/shopping-cart/src/main/java/com/trendyol/shoppingcart/model/Item.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="5" column="4" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/trendyol-cases/shopping-cart/src/test/java/com/trendyol/shoppingcart/model/ShoppingCartTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="6" column="26" lean-forward="true" selection-start-line="6" selection-start-column="26" selection-end-line="6" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/trendyol-cases/shopping-cart/src/main/java/com/trendyol/shoppingcart/model/IProduct.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="19" column="15" selection-start-line="19" selection-start-column="15" selection-end-line="19" selection-end-column="15" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/trendyol-cases/shopping-cart/src/main/java/com/trendyol/shoppingcart/model/Product.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-216">
+          <caret line="9" column="25" lean-forward="true" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#981#982#0" expanded="true" />
+            <element signature="e#1019#1020#0" expanded="true" />
+            <element signature="e#1182#1183#0" expanded="true" />
+            <element signature="e#1213#1214#0" expanded="true" />
+            <element signature="e#1330#1331#0" expanded="true" />
+            <element signature="e#1354#1355#0" expanded="true" />
+            <element signature="e#1408#1409#0" expanded="true" />
+            <element signature="e#1432#1433#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/trendyol-cases/shopping-cart/src/test/java/com/trendyol/shoppingcart/model/ProductTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="237">
+          <caret line="53" column="54" selection-start-line="53" selection-start-column="54" selection-end-line="53" selection-end-column="54" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/trendyol-cases/shopping-cart/src/main/java/com/trendyol/shoppingcart/exception/ApiExceptionHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/trendyol-cases/shopping-cart/src/main/java/com/trendyol/shoppingcart/model/ShoppingCart.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="10" column="2" lean-forward="true" selection-start-line="10" selection-start-column="2" selection-end-line="10" selection-end-column="56" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2406#2407#0" expanded="true" />
+            <element signature="e#2444#2445#0" expanded="true" />
+            <element signature="e#2484#2485#0" expanded="true" />
+            <element signature="e#2508#2509#0" expanded="true" />
+            <element signature="e#2562#2563#0" expanded="true" />
+            <element signature="e#2595#2596#0" expanded="true" />
+            <element signature="e#2661#2662#0" expanded="true" />
+            <element signature="e#2705#2706#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/trendyol-cases/shopping-cart/src/main/java/com/trendyol/shoppingcart/cart/ShoppingCart.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="178">
+          <caret line="12" column="57" selection-start-line="12" selection-start-column="57" selection-end-line="12" selection-end-column="57" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#244#245#0" expanded="true" />
+            <element signature="e#284#285#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>Spring</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>shopping-cart</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Maven: antlr:antlr:2.7.7</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+  <component name="mavenExecuteGoalHistory">
+    <option value="$PROJECT_DIR$/trendyol-cases" />
+    <option value="clean install -DskipTests" />
+    <option value="clean install" />
+  </component>
+</project>

@@ -1,0 +1,14 @@
+/home/hisler/Workspace/tutorials/github/case-study/trendyol-cases/shopping-cart/src/main/java/com/trendyol/shoppingcart/model/Coupon.java
+/home/hisler/Workspace/tutorials/github/case-study/trendyol-cases/shopping-cart/src/main/java/com/trendyol/shoppingcart/model/ShoppingCart.java
+/home/hisler/Workspace/tutorials/github/case-study/trendyol-cases/shopping-cart/src/main/java/com/trendyol/shoppingcart/model/Delivery.java
+/home/hisler/Workspace/tutorials/github/case-study/trendyol-cases/shopping-cart/src/main/java/com/trendyol/shoppingcart/model/IProduct.java
+/home/hisler/Workspace/tutorials/github/case-study/trendyol-cases/shopping-cart/src/main/java/com/trendyol/shoppingcart/ShoppingCartApplication.java
+/home/hisler/Workspace/tutorials/github/case-study/trendyol-cases/shopping-cart/src/main/java/com/trendyol/shoppingcart/model/ICategory.java
+/home/hisler/Workspace/tutorials/github/case-study/trendyol-cases/shopping-cart/src/main/java/com/trendyol/shoppingcart/model/Category.java
+/home/hisler/Workspace/tutorials/github/case-study/trendyol-cases/shopping-cart/src/main/java/com/trendyol/shoppingcart/discountbehavior/DiscountWithCoupon.java
+/home/hisler/Workspace/tutorials/github/case-study/trendyol-cases/shopping-cart/src/main/java/com/trendyol/shoppingcart/model/Product.java
+/home/hisler/Workspace/tutorials/github/case-study/trendyol-cases/shopping-cart/src/main/java/com/trendyol/shoppingcart/model/Campaign.java
+/home/hisler/Workspace/tutorials/github/case-study/trendyol-cases/shopping-cart/src/main/java/com/trendyol/shoppingcart/enums/DiscountType.java
+/home/hisler/Workspace/tutorials/github/case-study/trendyol-cases/shopping-cart/src/main/java/com/trendyol/shoppingcart/discountbehavior/DiscountBehavior.java
+/home/hisler/Workspace/tutorials/github/case-study/trendyol-cases/shopping-cart/src/main/java/com/trendyol/shoppingcart/exception/ApiExceptionHandler.java
+/home/hisler/Workspace/tutorials/github/case-study/trendyol-cases/shopping-cart/src/main/java/com/trendyol/shoppingcart/discountbehavior/DiscountWithCampaign.java

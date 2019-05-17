@@ -1,4 +1,4 @@
-package com.trendyol.shoppingcart.discountbehavior;
+package com.trendyol.shoppingcart.discount;
 
 import com.trendyol.shoppingcart.enums.DiscountType;
 

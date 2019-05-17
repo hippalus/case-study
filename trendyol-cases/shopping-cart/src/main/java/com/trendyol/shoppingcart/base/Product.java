@@ -1,4 +1,4 @@
-package com.trendyol.shoppingcart.model;
+package com.trendyol.shoppingcart.base;
 
 
 import java.util.Collection;

@@ -1,16 +1,16 @@
-package com.trendyol.shoppingcart.model;
+package com.trendyol.shoppingcart.base;
 
 import com.trendyol.shoppingcart.enums.DiscountType;
 
 public class Campaign {
 
-    private Category category;
+    private ICategory category;
     private double discount;
     private int minNumOfProducts;
     private DiscountType discountType;
 
 
-    public Campaign(Category category, double discount, int minNumOfProducts, DiscountType discountType) {
+    public Campaign(ICategory category, double discount, int minNumOfProducts, DiscountType discountType) {
         this.category = category;
         this.discount = discount;
         this.minNumOfProducts = minNumOfProducts;

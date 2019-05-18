@@ -33,5 +33,6 @@ public class ShoppingCartApplication {
         cart.applyDiscount(new ArrayList<>());
         cart.retrieveGroupedProductsByCategory();
         cart.getGroupedProductsByCategory();
+        cart.print();
     }
 }

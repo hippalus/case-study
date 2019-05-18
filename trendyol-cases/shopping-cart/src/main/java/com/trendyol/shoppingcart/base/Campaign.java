@@ -19,8 +19,6 @@ public class Campaign {
 
 
     public boolean checkDiscount(int numOfProducts) {
-        if (numOfProducts >= minNumOfProducts)
-            return true;
-        return false;
+        return numOfProducts > minNumOfProducts;
     }
 }

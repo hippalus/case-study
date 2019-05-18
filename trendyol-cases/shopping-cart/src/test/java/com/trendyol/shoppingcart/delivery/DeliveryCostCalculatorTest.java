@@ -1,9 +1,9 @@
 package com.trendyol.shoppingcart.delivery;
 
-import com.trendyol.shoppingcart.base.Category;
-import com.trendyol.shoppingcart.base.ICategory;
-import com.trendyol.shoppingcart.base.IProduct;
-import com.trendyol.shoppingcart.base.Product;
+import com.trendyol.shoppingcart.category.Category;
+import com.trendyol.shoppingcart.category.ICategory;
+import com.trendyol.shoppingcart.product.IProduct;
+import com.trendyol.shoppingcart.product.Product;
 import com.trendyol.shoppingcart.cart.ShoppingCart;
 import org.junit.Before;
 import org.junit.Test;
@@ -41,7 +41,6 @@ public class DeliveryCostCalculatorTest {
         childCategoriesForTechnology.add(computer);
         childCategoriesForTechnology.add(hardware);
         //todo bidirectional category hierarshi :)
-        technology.setChildCategories(childCategoriesForTechnology);
         computer.setParentCategory(technology);
         hardware.setParentCategory(computer);
         cart=new ShoppingCart();

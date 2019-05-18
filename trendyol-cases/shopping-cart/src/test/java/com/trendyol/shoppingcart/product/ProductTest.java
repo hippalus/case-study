@@ -1,5 +1,7 @@
-package com.trendyol.shoppingcart.base;
+package com.trendyol.shoppingcart.product;
 
+import com.trendyol.shoppingcart.category.Category;
+import com.trendyol.shoppingcart.category.ICategory;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -28,9 +30,7 @@ public class ProductTest {
         childCategory.add(this.frut);
         this.apple.setCategory(this.frut);
         this.frut.setParentCategory(this.food);
-        this.food.setChildCategories(childCategory);
 
-        assertEquals(this.food.getChildCategories(), this.apple.getAllCategory());
         assertEquals(this.food, this.apple.getCategory().getParentCategory());
     }
 

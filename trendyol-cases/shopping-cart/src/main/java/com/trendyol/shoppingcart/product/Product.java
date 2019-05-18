@@ -1,10 +1,13 @@
-package com.trendyol.shoppingcart.base;
+package com.trendyol.shoppingcart.product;
 
+
+import com.trendyol.shoppingcart.category.ICategory;
+import lombok.ToString;
 
 import java.util.Collection;
 import java.util.HashSet;
 import java.util.Set;
-
+@ToString
 public class Product implements IProduct {
 
     private String title;

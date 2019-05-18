@@ -1,20 +1,16 @@
-package com.trendyol.shoppingcart.base;
+package com.trendyol.shoppingcart.category;
 
 import java.io.Serializable;
 import java.util.Collection;
-import java.util.Set;
 
 public interface ICategory extends Serializable {
+
 
     String getTitle();
 
     ICategory getParentCategory();
 
-    Set<ICategory> getChildCategories();
-
-    Collection<? extends ICategory> getALlCategory();
-
-    void setChildCategories(Set<ICategory> childCategories);
+    Collection<? extends ICategory> getAllCategory();
 
     void setTitle(String title);
 

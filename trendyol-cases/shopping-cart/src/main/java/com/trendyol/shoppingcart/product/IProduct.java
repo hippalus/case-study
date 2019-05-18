@@ -1,4 +1,6 @@
-package com.trendyol.shoppingcart.base;
+package com.trendyol.shoppingcart.product;
+
+import com.trendyol.shoppingcart.category.ICategory;
 
 import java.io.Serializable;
 import java.util.Collection;

@@ -2,6 +2,6 @@ package com.trendyol.shoppingcart.delivery;
 
 import com.trendyol.shoppingcart.cart.ShoppingCart;
 
-abstract class Calculator {
-    abstract double calculateFor(ShoppingCart cart);
+public abstract class Calculator {
+    public abstract double calculateFor(ShoppingCart cart);
 }

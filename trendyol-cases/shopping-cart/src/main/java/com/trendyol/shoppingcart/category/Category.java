@@ -1,23 +1,25 @@
-package com.trendyol.shoppingcart.base;
+package com.trendyol.shoppingcart.category;
+
+import lombok.ToString;
 
 import java.util.Collection;
 import java.util.HashSet;
 import java.util.Set;
 
+@ToString
 public class Category implements ICategory {
 
     private String title;
     private ICategory parentCategory;
-    private Set<ICategory> childCategories;
 
     public Category(String title) {
         this.title = title;
     }
 
-    public Category(String title, Category parentCategory, Set<ICategory> childCategories) {
+    public Category(String title, Category parentCategory) {
         this.title = title;
         this.parentCategory = parentCategory;
-        this.childCategories = childCategories;
+
     }
 
     @Override
@@ -30,29 +32,23 @@ public class Category implements ICategory {
         return this.parentCategory;
     }
 
-    @Override
-    public Set<ICategory> getChildCategories() {
-        return  this.childCategories;
-    }
 
     @Override
-    public Collection<? extends ICategory> getALlCategory() {
-        Set<ICategory> categories=new HashSet<>();
+    public Collection<? extends ICategory> getAllCategory() {
+        Set<ICategory> categories = new HashSet<>();
         categories.add(getParentCategory());
-        categories.addAll(getChildCategories());
         categories.add(this);
         return categories;
     }
+
     @Override
     public void setTitle(String title) {
         this.title = title;
     }
+
     @Override
     public void setParentCategory(ICategory parentCategory) {
         this.parentCategory = parentCategory;
     }
-    @Override
-    public void setChildCategories(Set<ICategory> childCategories) {
-        this.childCategories = childCategories;
-    }
+
 }

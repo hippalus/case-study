@@ -1,4 +1,4 @@
-package com.trendyol.shoppingcart.base;
+package com.trendyol.shoppingcart.product;
 
 import com.trendyol.shoppingcart.enums.DiscountType;
 
@@ -15,8 +15,6 @@ public class Coupon {
 
 
     public boolean makeDiscount(double amount) {
-        if(amount>=this.minimumAmount)
-            return true;
-        return false;
+        return amount >= this.minimumAmount;
     }
 }

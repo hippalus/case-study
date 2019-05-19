@@ -2,12 +2,12 @@ package com.trendyol.shoppingcart.product;
 
 
 import com.trendyol.shoppingcart.category.ICategory;
-import lombok.ToString;
+import com.trendyol.shoppingcart.utilities.Utils;
 
 import java.util.Collection;
 import java.util.HashSet;
 import java.util.Set;
-@ToString
+
 public class Product implements IProduct {
 
     private String title;
@@ -71,5 +71,11 @@ public class Product implements IProduct {
     @Override
     public double priceForQuantity(int quantity) {
         return this.price * quantity;
+    }
+
+
+    @Override
+    public String toString() {
+        return Utils.toZtring(this,"Product ");
     }
 }

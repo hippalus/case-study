@@ -1,21 +1,21 @@
 package com.trendyol.shoppingcart.discount;
 
+import com.trendyol.shoppingcart.campaign.ICampaign;
 import com.trendyol.shoppingcart.category.Category;
 import com.trendyol.shoppingcart.enums.DiscountType;
-import com.trendyol.shoppingcart.product.Campaign;
+import com.trendyol.shoppingcart.campaign.Campaign;
 import org.junit.Before;
 import org.junit.Test;
 
 import java.util.ArrayList;
 import java.util.List;
-import static org.junit.Assert.*;
 
 public class DiscountFactoryTest {
     private Campaign c1;
     private Campaign c2;
-    private List<Campaign> campaigns;
-    private DiscountStrategy st1,st2;
-    private List<DiscountStrategy> discountStrategies;
+    private List<ICampaign> campaigns;
+    private IDiscountStrategy st1,st2;
+    private List<IDiscountStrategy> discountStrategies;
 
 
     @Before
@@ -25,8 +25,8 @@ public class DiscountFactoryTest {
         campaigns=new ArrayList<>();
         campaigns.add(c1);
         campaigns.add(c2);
-        st1=new RateDiscount(c1);
-        st2=new AmountDiscount(c2);
+        st1=new RateIDiscount(c1);
+        st2=new AmountIDiscount(c2);
         discountStrategies=new ArrayList<>();
         discountStrategies.add(st1);
         discountStrategies.add(st2);
@@ -35,7 +35,7 @@ public class DiscountFactoryTest {
 
     @Test
     public void getDiscountStrategy() {
-        List<DiscountStrategy> actual=DiscountFactory.getDiscountStrategy(campaigns);
+        List<IDiscountStrategy> actual=DiscountFactory.getDiscountStrategy(campaigns);
 
         //assertThat(actual,);
     }

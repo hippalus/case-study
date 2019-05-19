@@ -1,12 +1,13 @@
 package com.trendyol.shoppingcart.category;
 
+import com.trendyol.shoppingcart.utilities.Utils;
 import lombok.ToString;
 
 import java.util.Collection;
 import java.util.HashSet;
 import java.util.Set;
 
-@ToString
+
 public class Category implements ICategory {
 
     private String title;
@@ -16,7 +17,7 @@ public class Category implements ICategory {
         this.title = title;
     }
 
-    public Category(String title, Category parentCategory) {
+    public Category(String title, ICategory parentCategory) {
         this.title = title;
         this.parentCategory = parentCategory;
 
@@ -51,4 +52,9 @@ public class Category implements ICategory {
         this.parentCategory = parentCategory;
     }
 
+
+    @Override
+    public String toString() {
+     return Utils.toZtring(this,"Category ");
+    }
 }

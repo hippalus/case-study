@@ -1,26 +1,29 @@
 package com.trendyol.shoppingcart.discount;
 
 
-import com.trendyol.shoppingcart.product.Campaign;
+import com.trendyol.shoppingcart.campaign.Campaign;
+import com.trendyol.shoppingcart.campaign.ICampaign;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class DiscountFactory {
 
-    public static List<DiscountStrategy> getDiscountStrategy(List<Campaign> campaigns) {
+    public static List<IDiscountStrategy> getDiscountStrategy(List<ICampaign> campaigns) {
 
-        List<DiscountStrategy> discountStrategies = new ArrayList<>();
-        for (Campaign campaign : campaigns)
-            switch (campaign.getDiscountType()) {
-                case AMOUNT:
-                    discountStrategies.add(new AmountDiscount(campaign));
-                    break;
-                case RATE:
-                    discountStrategies.add(new RateDiscount(campaign));
-                    break;
-                default:
-                    throw new IllegalArgumentException();
+        List<IDiscountStrategy> discountStrategies = new ArrayList<>();
+        for (ICampaign campaign : campaigns)
+            if (campaign.getStatus()) {
+                switch (campaign.getDiscountType()) {
+                    case AMOUNT:
+                        discountStrategies.add(new AmountIDiscount(campaign));
+                        break;
+                    case RATE:
+                        discountStrategies.add(new RateIDiscount(campaign));
+                        break;
+                    default:
+                        throw new IllegalArgumentException();
+                }
             }
         return discountStrategies;
     }

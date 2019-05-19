@@ -5,7 +5,10 @@ import com.trendyol.shoppingcart.product.IProduct;
 
 import java.util.Map;
 
-public interface DiscountStrategy {
+/**
+ * Bu interface yeni Indirim Strategylerini
+ */
+public interface IDiscountStrategy {
     double calculateDiscount(Map<ICategory, Map<IProduct, Integer>> groupedProductsByCategory);
 
 }

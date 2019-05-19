@@ -13,8 +13,8 @@ private  CartResult result;
     }
 
     @Test
-    public void toStringg() {
-       String s= result.toStringg();
+    public void toStr() {
+       String s= result.toString();
         System.out.println(s);
         assertEquals(1,1);
     }

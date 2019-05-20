@@ -1,7 +1,8 @@
 package com.trendyol.shoppingcart.product;
 
 import com.trendyol.shoppingcart.category.Category;
-import com.trendyol.shoppingcart.category.ICategory;
+
+import com.trendyol.shoppingcart.category.CategoryComponent;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -11,10 +12,10 @@ import java.util.Set;
 import static org.junit.Assert.*;
 
 public class ProductTest {
-    private IProduct apple;
-    private IProduct almonds;
-    private ICategory food;
-    private ICategory frut;
+    private ProductComponent apple;
+    private ProductComponent almonds;
+    private CategoryComponent food;
+    private CategoryComponent frut;
 
     @Before
     public void setUp() throws Exception {
@@ -26,7 +27,7 @@ public class ProductTest {
 
     @Test
     public void getCategory() {
-        Set<ICategory> childCategory = new HashSet<>();
+        Set<CategoryComponent> childCategory = new HashSet<>();
         childCategory.add(this.frut);
         this.apple.setCategory(this.frut);
         this.frut.setParentCategory(this.food);

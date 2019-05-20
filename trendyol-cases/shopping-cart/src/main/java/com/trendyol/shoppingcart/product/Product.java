@@ -1,24 +1,25 @@
 package com.trendyol.shoppingcart.product;
 
 
-import com.trendyol.shoppingcart.category.ICategory;
+import com.trendyol.shoppingcart.category.CategoryComponent;
 import com.trendyol.shoppingcart.utilities.Utils;
 
 import java.util.Collection;
 import java.util.HashSet;
 import java.util.Set;
 
-public class Product implements IProduct {
+
+public class Product extends ProductComponent {
 
     private String title;
     private double price;
-    private ICategory category;
+    private CategoryComponent category;
 
     public Product(String title) {
         this.title = title;
     }
 
-    public Product(String title, Double price, ICategory category) {
+    public Product(String title, Double price, CategoryComponent category) {
         this.title = title;
         this.price = price;
         this.category = category;
@@ -36,19 +37,19 @@ public class Product implements IProduct {
     }
 
     @Override
-    public void setCategory(ICategory category) {
+    public void setCategory(CategoryComponent category) {
         this.category = category;
     }
 
     @Override
-    public Collection<? extends ICategory> getAllCategory() {
-        Set<ICategory> categories = new HashSet<>();
+    public Collection<? extends CategoryComponent> getAllCategory() {
+        Set<CategoryComponent> categories = new HashSet<>();
         categories.add(getCategory());
         return categories;
     }
 
     @Override
-    public ICategory getCategory() {
+    public CategoryComponent getCategory() {
         return this.category;
     }
 

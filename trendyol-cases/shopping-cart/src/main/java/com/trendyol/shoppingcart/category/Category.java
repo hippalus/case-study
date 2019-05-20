@@ -8,16 +8,16 @@ import java.util.HashSet;
 import java.util.Set;
 
 
-public class Category implements ICategory {
+public class Category extends CategoryComponent {
 
     private String title;
-    private ICategory parentCategory;
+    private CategoryComponent parentCategory;
 
     public Category(String title) {
         this.title = title;
     }
 
-    public Category(String title, ICategory parentCategory) {
+    public Category(String title, CategoryComponent parentCategory) {
         this.title = title;
         this.parentCategory = parentCategory;
 
@@ -29,14 +29,14 @@ public class Category implements ICategory {
     }
 
     @Override
-    public ICategory getParentCategory() {
+    public CategoryComponent getParentCategory() {
         return this.parentCategory;
     }
 
 
     @Override
-    public Collection<? extends ICategory> getAllCategory() {
-        Set<ICategory> categories = new HashSet<>();
+    public Collection<? extends CategoryComponent> getAllCategory() {
+        Set<CategoryComponent> categories = new HashSet<>();
         categories.add(getParentCategory());
         categories.add(this);
         return categories;
@@ -48,7 +48,7 @@ public class Category implements ICategory {
     }
 
     @Override
-    public void setParentCategory(ICategory parentCategory) {
+    public void setParentCategory(CategoryComponent parentCategory) {
         this.parentCategory = parentCategory;
     }
 

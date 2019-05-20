@@ -1,20 +1,20 @@
 package com.trendyol.shoppingcart.campaign;
 
-import com.trendyol.shoppingcart.category.ICategory;
+import com.trendyol.shoppingcart.category.CategoryComponent;
 import com.trendyol.shoppingcart.enums.DiscountType;
 
 import java.util.Objects;
 
-public class Campaign implements ICampaign {
+public class Campaign extends CampaignComponent {
 
-    private ICategory category;
+    private CategoryComponent category;
     private double discount;
     private int minNumOfProducts;
     private DiscountType discountType;
     private boolean isActive;
 
 
-    public Campaign(ICategory category, double discount, int minNumOfProducts, DiscountType discountType) {
+    public Campaign(CategoryComponent category, double discount, int minNumOfProducts, DiscountType discountType) {
         this.category = category;
         this.discount = discount;
         this.minNumOfProducts = minNumOfProducts;
@@ -27,12 +27,12 @@ public class Campaign implements ICampaign {
 
 
     @Override
-    public ICategory getCategory() {
+    public CategoryComponent getCategory() {
         return this.category;
     }
 
     @Override
-    public void setCategory(ICategory category) {
+    public void setCategory(CategoryComponent category) {
         this.category=category;
     }
 

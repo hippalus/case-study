@@ -14,6 +14,7 @@ public class Coupon extends CouponComponent {
         this.minimumAmount = minimumAmount;
         this.discount = discount;
         this.discountType = discountType;
+        this.isActive=true;
     }
 
     @Override

@@ -7,6 +7,7 @@ import com.trendyol.shoppingcart.discount.withcampaign.IDiscountStrategy;
 import com.trendyol.shoppingcart.product.ProductComponent;
 
 import java.util.Map;
+import java.util.Objects;
 
 public class AmountIDiscount implements IDiscountStrategy {
     private CampaignComponent campaign;
@@ -17,8 +18,13 @@ public class AmountIDiscount implements IDiscountStrategy {
 
     @Override
     public double calculateDiscount(Map<CategoryComponent, Map<ProductComponent, Integer>> groupedProductsByCategory) {
+
+        if (Objects.isNull(groupedProductsByCategory))
+            throw new NullPointerException();
+
         double totalDiscountPrice = 0;
         /* todo java 8 stream api */
+        //?  O(n^2)
             for (Map.Entry<CategoryComponent, Map<ProductComponent, Integer>> entry : groupedProductsByCategory.entrySet()) {
                 if (entry.getKey().getAllCategory().contains(campaign.getCategory())) {
                     Map<ProductComponent, Integer> productsMap = entry.getValue();

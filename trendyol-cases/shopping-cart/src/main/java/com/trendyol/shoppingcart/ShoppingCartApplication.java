@@ -22,7 +22,7 @@ public class ShoppingCartApplication {
         erkekAyakkabi.setParentCategory(erkek);
 
 
-        IProduct erkekPantolon=new Product("Erkek Pantolon",30.0,erkek);
+        IProduct erkekPantolon=new Product("Erkek Pantolon",30.0,erkekAyakkabi);
 
         IProduct erkekKazak=new Product("Erkek Kazak",20.0,erkekAyakkabi);
         IProduct erkekParfum=new Product("Erkek Parfum Versace",100.0,erkekAyakkabi);
@@ -49,8 +49,8 @@ public class ShoppingCartApplication {
         cart.totalPrice();
         cart.applyCoupon();
         cart.applyDiscount(campaigns);
-        _20DiscountOnMoreThan3.isActive(false);
-        __5DiscountOnMoreThan5.isActive(false);
+        _20DiscountOnMoreThan3.isActive(true);
+        __5DiscountOnMoreThan5.isActive(true);
         cart.retrieveGroupedProductsByCategory();
         cart.getGroupedProductsByCategory();
         cart.deliveryCost();

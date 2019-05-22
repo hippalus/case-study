@@ -22,12 +22,12 @@ public class RateIDiscount implements IDiscountStrategy {
             throw new NullPointerException();
 
         double totalDiscountAmount = 0;
-        boolean isParentExists = true;
-        /* todo optimize O(n2) */
+        boolean isParentExists = false;
+        /* todo optimize O(n2)  workaround */
         for (Map.Entry<CategoryComponent, Map<ProductComponent, Integer>> entry : groupedProductsByCategory.entrySet()) {
             //Eger kampanyanin uyguladigi kategoriye ait sub categoriyide iceriyorsa
             if ((entry.getKey().getParentCategory() != null && entry.getKey().getParentCategory().equals(campaign.getCategory()))) {
-                isParentExists = false;
+                isParentExists = true;
             }
             if (entry.getKey().getAllCategory().contains(campaign.getCategory())) {
                 int numOfProduct = 0;
@@ -38,7 +38,7 @@ public class RateIDiscount implements IDiscountStrategy {
                 }
                 if (campaign.checkMinNumOfProduct(numOfProduct)) {
                     //urun adeti 5 ve urun fiyati 20 toplam fiyat 5*20=100 indirim orani =%20 toplam toplam indirim=20
-                    if (!isParentExists)
+                    if (isParentExists)
                         totalDiscountAmount += (priceForQuantity * campaign.getDiscount()) / 100d;
                     else totalDiscountAmount = (priceForQuantity * campaign.getDiscount()) / 100d;
                 }

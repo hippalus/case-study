@@ -23,12 +23,12 @@ public class AmountIDiscount implements IDiscountStrategy {
             throw new NullPointerException();
 
         double totalDiscountAmount = 0;
-        boolean isParentExists = true;
+        boolean isParentExists = false;
         int temp = 0;
-        /* todo O(n^2) */
+        /* todo O(n^2)  workaround*/
         for (Map.Entry<CategoryComponent, Map<ProductComponent, Integer>> entry : groupedProductsByCategory.entrySet()) {
             if ((entry.getKey().getParentCategory() != null && entry.getKey().getParentCategory().equals(campaign.getCategory()))) {
-                isParentExists = false;
+                isParentExists = true;
             }
             if (entry.getKey().getAllCategory().contains(campaign.getCategory())) {
                 int totalNumOfProduct = 0;
@@ -36,7 +36,7 @@ public class AmountIDiscount implements IDiscountStrategy {
 
                     totalNumOfProduct += product.getValue();
                     temp += totalNumOfProduct;
-                    if (!isParentExists) {
+                    if (isParentExists) {
                         totalNumOfProduct = temp;
                     }
 

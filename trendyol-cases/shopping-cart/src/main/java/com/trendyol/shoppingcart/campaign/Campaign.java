@@ -76,21 +76,5 @@ public class Campaign extends CampaignComponent {
         this.isActive=status;
     }
 
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (!(o instanceof Campaign)) return false;
-        Campaign campaign = (Campaign) o;
-        return Double.compare(campaign.getDiscount(), getDiscount()) == 0 &&
-                getMinNumOfProducts() == campaign.getMinNumOfProducts() &&
-                Objects.equals(getCategory(), campaign.getCategory()) &&
-                getDiscountType() == campaign.getDiscountType();
-    }
-
-    @Override
-    public int hashCode() {
-        return Objects.hash(getCategory(), getDiscount(), getMinNumOfProducts(), getDiscountType());
-    }
-
 
 }

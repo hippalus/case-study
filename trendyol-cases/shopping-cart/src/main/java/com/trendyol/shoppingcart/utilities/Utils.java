@@ -9,13 +9,13 @@ public class Utils {
         return Double.parseDouble(new DecimalFormat("##.##").format(number));
     }
 
-    public static String toZtring(Object ob ,String title) {
+    public static String toZtring(Object ob) {
         StringBuffer result = new StringBuffer();
-        String newLine = System.getProperty("line.separator");
+       // String newLine = System.getProperty("line.separator");
 
        // result.append(ob.getClass().getName());
-        result.append(title+"  {");
-        result.append(newLine);
+       // result.append(title+"  {");
+        result.append("\n");
 
         //determine fields declared in this class only (no fields of superclass)
         Field[] fields = ob.getClass().getDeclaredFields();
@@ -32,7 +32,7 @@ public class Utils {
             } catch (IllegalAccessException ex) {
                 System.out.println(ex);
             }
-            result.append(newLine);
+         //   result.append(newLine);
         }
         result.append("}");
 

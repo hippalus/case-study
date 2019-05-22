@@ -55,6 +55,6 @@ public class Category extends CategoryComponent {
 
     @Override
     public String toString() {
-     return Utils.toZtring(this,"Category ");
+     return Utils.toZtring(this);
     }
 }

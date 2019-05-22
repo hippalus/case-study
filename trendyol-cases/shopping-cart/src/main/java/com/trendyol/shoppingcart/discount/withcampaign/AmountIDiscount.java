@@ -27,8 +27,7 @@ public class AmountIDiscount implements IDiscountStrategy {
         //?  O(n^2)
             for (Map.Entry<CategoryComponent, Map<ProductComponent, Integer>> entry : groupedProductsByCategory.entrySet()) {
                 if (entry.getKey().getAllCategory().contains(campaign.getCategory())) {
-                    Map<ProductComponent, Integer> productsMap = entry.getValue();
-                    for (Map.Entry<ProductComponent, Integer> product : productsMap.entrySet()) {
+                    for (Map.Entry<ProductComponent, Integer> product :  entry.getValue().entrySet()) {
                         if (campaign.checkDiscount(product.getValue())) {
                             //urun adeti 5 ve utun fiyati 10 toplam fiyat 5*10=50 indirim fiyati =5  toplam indirim =45
                             totalDiscountPrice += (product.getKey().priceForQuantity(product.getValue()) - campaign.getDiscount());

@@ -69,6 +69,6 @@ public class Coupon extends CouponComponent {
 
     @Override
     public String toString() {
-        return Utils.toZtring(this,"Coupon ");
+        return Utils.toZtring(this);
     }
 }

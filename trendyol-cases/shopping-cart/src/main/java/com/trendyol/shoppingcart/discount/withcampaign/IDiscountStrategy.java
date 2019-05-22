@@ -11,4 +11,5 @@ import java.util.Map;
 public interface IDiscountStrategy {
     double calculateDiscount(Map<CategoryComponent, Map<ProductComponent, Integer>> groupedProductsByCategory);
 
+
 }

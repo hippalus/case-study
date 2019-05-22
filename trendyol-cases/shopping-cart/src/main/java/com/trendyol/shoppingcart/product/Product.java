@@ -77,6 +77,6 @@ public class Product extends ProductComponent {
 
     @Override
     public String toString() {
-        return Utils.toZtring(this,"Product ");
+        return Utils.toZtring(this);
     }
 }

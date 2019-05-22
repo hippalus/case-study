@@ -24,7 +24,7 @@ public class RateIDiscount implements IDiscountStrategy {
         double totalDiscountPrice = 0;
         /* todo java 8 stream api */
         for (Map.Entry<CategoryComponent, Map<ProductComponent, Integer>> entry : groupedProductsByCategory.entrySet()) {
-            //Eger kampanyanin uyguladigi kategori ye ait sub categoriyide iceriyorsa
+            //Eger kampanyanin uyguladigi kategoriye ait sub categoriyide iceriyorsa
             if (entry.getKey().getAllCategory().contains(campaign.getCategory())) {
                 for (Map.Entry<ProductComponent, Integer> product :  entry.getValue().entrySet()) {
                     if (campaign.checkDiscount(product.getValue())) {

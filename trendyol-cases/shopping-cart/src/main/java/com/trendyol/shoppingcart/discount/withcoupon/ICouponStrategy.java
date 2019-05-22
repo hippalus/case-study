@@ -1,12 +1,11 @@
 package com.trendyol.shoppingcart.discount.withcoupon;
 
-import com.trendyol.shoppingcart.cart.ShoppingCart;
-import com.trendyol.shoppingcart.category.CategoryComponent;
-import com.trendyol.shoppingcart.coupon.CouponComponent;
-import com.trendyol.shoppingcart.product.ProductComponent;
 
-import java.util.Map;
-
+/**
+ * Strategy design pattern used.
+ * Because calculations will vary according to the types of discounts.
+ * This interface can be applied to implement a new discount calculation
+ */
 public interface ICouponStrategy {
 
     double calculateCouponDiscount(double totalAmount);

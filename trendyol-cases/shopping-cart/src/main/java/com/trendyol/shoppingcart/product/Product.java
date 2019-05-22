@@ -14,6 +14,7 @@ public class Product extends ProductComponent {
     private String title;
     private double price;
     private CategoryComponent category;
+    private boolean isEnabled;
 
     public Product(String title) {
         this.title = title;
@@ -23,6 +24,7 @@ public class Product extends ProductComponent {
         this.title = title;
         this.price = price;
         this.category = category;
+        this.isEnabled=true;
     }
 
 
@@ -32,8 +34,14 @@ public class Product extends ProductComponent {
     }
 
     @Override
-    public boolean isEnabled() {
-        return true;
+    public void isEnabled(boolean status) {
+        this.isEnabled=status;
+
+    }
+
+    @Override
+    public boolean getStatus() {
+        return this.isEnabled;
     }
 
     @Override

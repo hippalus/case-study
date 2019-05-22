@@ -3,7 +3,6 @@ package com.trendyol.shoppingcart.campaign;
 import com.trendyol.shoppingcart.category.CategoryComponent;
 import com.trendyol.shoppingcart.enums.DiscountType;
 
-import java.util.Objects;
 
 public class Campaign extends CampaignComponent {
 
@@ -19,12 +18,19 @@ public class Campaign extends CampaignComponent {
         this.discount = discount;
         this.minNumOfProducts = minNumOfProducts;
         this.discountType = discountType;
-        this.isActive=true;
-    }
-    public boolean checkDiscount(int numOfProducts) {
-        return numOfProducts > minNumOfProducts;
+        this.isActive = true;
     }
 
+
+    @Override
+    public boolean checkMinNumOfProduct(int numOfProducts) {
+       return numOfProducts >this.minNumOfProducts;
+    }
+
+    @Override
+    public boolean checkDiscount(double totalAmount) {
+          return totalAmount>this.discount;
+    }
 
     @Override
     public CategoryComponent getCategory() {
@@ -33,7 +39,7 @@ public class Campaign extends CampaignComponent {
 
     @Override
     public void setCategory(CategoryComponent category) {
-        this.category=category;
+        this.category = category;
     }
 
     @Override
@@ -43,7 +49,7 @@ public class Campaign extends CampaignComponent {
 
     @Override
     public void setDiscount(double discount) {
-    this.discount=discount;
+        this.discount = discount;
     }
 
     @Override
@@ -53,7 +59,7 @@ public class Campaign extends CampaignComponent {
 
     @Override
     public void setMinNumOfProducts(int minNumOfProducts) {
-        this.minNumOfProducts=minNumOfProducts;
+        this.minNumOfProducts = minNumOfProducts;
     }
 
     @Override
@@ -63,7 +69,7 @@ public class Campaign extends CampaignComponent {
 
     @Override
     public void setDiscountType(DiscountType discountType) {
-        this.discount=discount;
+        this.discount = discount;
     }
 
     @Override
@@ -73,7 +79,7 @@ public class Campaign extends CampaignComponent {
 
     @Override
     public void isActive(boolean status) {
-        this.isActive=status;
+        this.isActive = status;
     }
 
 

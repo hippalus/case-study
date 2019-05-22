@@ -22,20 +22,33 @@ public class AmountIDiscount implements IDiscountStrategy {
         if (Objects.isNull(groupedProductsByCategory))
             throw new NullPointerException();
 
-        double totalDiscountPrice = 0;
-        /* todo java 8 stream api */
-        //?  O(n^2)
-            for (Map.Entry<CategoryComponent, Map<ProductComponent, Integer>> entry : groupedProductsByCategory.entrySet()) {
-                if (entry.getKey().getAllCategory().contains(campaign.getCategory())) {
-                    for (Map.Entry<ProductComponent, Integer> product :  entry.getValue().entrySet()) {
-                        if (campaign.checkDiscount(product.getValue())) {
-                            //urun adeti 5 ve utun fiyati 10 toplam fiyat 5*10=50 indirim fiyati =5  toplam indirim =45
-                            totalDiscountPrice += (product.getKey().priceForQuantity(product.getValue()) - campaign.getDiscount());
-                        }
-                    }
-                }
+        double totalDiscountAmount = 0;
+        boolean isParentExists = true;
+        int temp = 0;
+        /* todo O(n^2) */
+        for (Map.Entry<CategoryComponent, Map<ProductComponent, Integer>> entry : groupedProductsByCategory.entrySet()) {
+            if ((entry.getKey().getParentCategory() != null && entry.getKey().getParentCategory().equals(campaign.getCategory()))) {
+                isParentExists = false;
             }
-        return totalDiscountPrice;
+            if (entry.getKey().getAllCategory().contains(campaign.getCategory())) {
+                int totalNumOfProduct = 0;
+                for (Map.Entry<ProductComponent, Integer> product : entry.getValue().entrySet()) {
+
+                    totalNumOfProduct += product.getValue();
+                    temp += totalNumOfProduct;
+                    if (!isParentExists) {
+                        totalNumOfProduct = temp;
+                    }
+
+                }
+                if (campaign.checkMinNumOfProduct(totalNumOfProduct)) {
+                    //urun adeti 5 ve utun fiyati 10 toplam fiyat 5*10=50 indirim fiyati =5  toplam indirim =45
+                    totalDiscountAmount = (campaign.getDiscount());
+                }
+
+            }
+        }
+        return totalDiscountAmount;
     }
 
 }

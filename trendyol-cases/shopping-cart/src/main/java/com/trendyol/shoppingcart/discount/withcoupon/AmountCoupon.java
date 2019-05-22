@@ -11,6 +11,6 @@ public class AmountCoupon implements ICouponStrategy {
 
     @Override
     public double calculateCouponDiscount(double totalAmount) {
-        return coupon.checkDiscount(totalAmount)?totalAmount-coupon.getDiscount():0;
+        return coupon.checkDiscount(totalAmount) ? totalAmount - coupon.getDiscount() : 0;
     }
 }

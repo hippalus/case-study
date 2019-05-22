@@ -42,7 +42,7 @@ public class DiscountFactoryTest {
     public void getDiscountStrategy() {
         List<IDiscountStrategy> actual= DiscountFactory.getDiscountStrategy(campaigns);
 
-        //assertThat(actual,);
+        //ass(actual);
     }
 
 

@@ -19,23 +19,23 @@ public class ShoppingCartApplication {
 
         //Define Category
         CategoryComponent erkek=new Category("Erkek");
-        CategoryComponent erkekAyakkabi=new Category("Erkek Ayakkabi Cat");
+        CategoryComponent erkekAyakkabi=new Category("Ayakkabi Er");
         erkekAyakkabi.setParentCategory(erkek);
 
         //Define Product
-        ProductComponent erkekPantolon=new Product(" Pantolon",30.0,erkek);
-        ProductComponent erkekKazak=new Product(" Kazak",20.0,erkek);
+      ProductComponent erkekPantolon=new Product(" Pantolon",30.0,erkek);
+       ProductComponent erkekKazak=new Product(" Kazak",20.0,erkek);
         ProductComponent erkekParfum=new Product(" Parfum Versace",100.0,erkek);
-        ProductComponent kemalTanca46Num=new Product(" Kemal Tanca 46Num",350d,erkek);
+        ProductComponent kemalTanca46Num=new Product(" Kemal Tanca 46Num",50d,erkekAyakkabi);
 
         //Define Campaign
-        CampaignComponent _20DiscountOnMoreThan3=new Campaign(erkekAyakkabi,20.0,3, DiscountType.AMOUNT);
-        CampaignComponent __5DiscountOnMoreThan5=new Campaign(erkekAyakkabi,40,5,DiscountType.RATE);
-        CampaignComponent __20DiscountOnMoreThan2=new Campaign(erkek,30,2,DiscountType.RATE);
+       CampaignComponent _20DiscountOnMoreThan3=new Campaign(erkekAyakkabi,30.0,3, DiscountType.AMOUNT);
+        CampaignComponent __5DiscountOnMoreThan5=new Campaign(erkekAyakkabi,20,2,DiscountType.RATE);
+        CampaignComponent __20DiscountOnMoreThan2=new Campaign(erkek,50,2,DiscountType.RATE);
         List<CampaignComponent> campaigns=new ArrayList<>();
         campaigns.add(_20DiscountOnMoreThan3);
         campaigns.add(__5DiscountOnMoreThan5);
-        campaigns.add(__20DiscountOnMoreThan2);
+       campaigns.add(__20DiscountOnMoreThan2);
         //_20DiscountOnMoreThan3.isActive(false);
        // __5DiscountOnMoreThan5.isActive(false);
 
@@ -44,15 +44,14 @@ public class ShoppingCartApplication {
 
         ShoppingCart cart =new ShoppingCart();
         cart.addItem(erkekPantolon,5);
-        cart.addItem(erkekKazak,10);
-        cart.addItem(erkekKazak,2);
-        cart.addItem(erkekParfum,1);
-        cart.addItem(kemalTanca46Num,1);
+         cart.addItem(erkekKazak,4);
+       cart.addItem(erkekParfum,3);
+        cart.addItem(kemalTanca46Num,4);
         cart.print();
-        cart.removeItem(erkekPantolon,1);
+       // cart.removeItem(erkekPantolon,1);
         cart.totalAmount();
         cart.applyDiscount(campaigns);
-        cart.applyCoupon(component);
+       cart.applyCoupon(component);
         cart.getDeliveryCost();
         cart.print();
 

@@ -11,11 +11,11 @@ public class Utils {
 
     public static String toZtring(Object ob) {
         StringBuffer result = new StringBuffer();
-       // String newLine = System.getProperty("line.separator");
+       String newLine = System.getProperty("line.separator");
 
        // result.append(ob.getClass().getName());
        // result.append(title+"  {");
-        result.append("\n");
+        result.append(newLine);
 
         //determine fields declared in this class only (no fields of superclass)
         Field[] fields = ob.getClass().getDeclaredFields();
@@ -32,9 +32,9 @@ public class Utils {
             } catch (IllegalAccessException ex) {
                 System.out.println(ex);
             }
-         //   result.append(newLine);
+         // result.append(newLine);
         }
-        result.append("}");
+        //result.append("}");
 
         return result.toString();
     }

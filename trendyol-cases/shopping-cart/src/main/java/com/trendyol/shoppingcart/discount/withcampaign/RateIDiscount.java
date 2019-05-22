@@ -21,21 +21,78 @@ public class RateIDiscount implements IDiscountStrategy {
         if (Objects.isNull(groupedProductsByCategory))
             throw new NullPointerException();
 
-        double totalDiscountPrice = 0;
-        /* todo java 8 stream api */
+        double totalDiscountAmount = 0;
+        boolean isParentExists = true;
+        /* todo optimize O(n2) */
         for (Map.Entry<CategoryComponent, Map<ProductComponent, Integer>> entry : groupedProductsByCategory.entrySet()) {
             //Eger kampanyanin uyguladigi kategoriye ait sub categoriyide iceriyorsa
-            if (entry.getKey().getAllCategory().contains(campaign.getCategory())) {
-                for (Map.Entry<ProductComponent, Integer> product :  entry.getValue().entrySet()) {
-                    if (campaign.checkDiscount(product.getValue())) {
-                        //urun adeti 5 ve urun fiyati 20 toplam fiyat 5*20=100 indirim orani =%20 toplam toplam indirim=20
-                        totalDiscountPrice += (product.getKey().priceForQuantity(product.getValue()) * campaign.getDiscount()) / 100d;
-                    }
-                }
+            if ((entry.getKey().getParentCategory() != null && entry.getKey().getParentCategory().equals(campaign.getCategory()))) {
+                isParentExists = false;
             }
+            if (entry.getKey().getAllCategory().contains(campaign.getCategory())) {
+                int numOfProduct = 0;
+                double priceForQuantity = 0;
+                for (Map.Entry<ProductComponent, Integer> product : entry.getValue().entrySet()) {
+                    numOfProduct += product.getValue();
+                    priceForQuantity += product.getKey().priceForQuantity(product.getValue());
+                }
+                if (campaign.checkMinNumOfProduct(numOfProduct)) {
+                    //urun adeti 5 ve urun fiyati 20 toplam fiyat 5*20=100 indirim orani =%20 toplam toplam indirim=20
+                    if (!isParentExists)
+                        totalDiscountAmount += (priceForQuantity * campaign.getDiscount()) / 100d;
+                    else totalDiscountAmount = (priceForQuantity * campaign.getDiscount()) / 100d;
+                }
+
+            }
+
         }
-        return totalDiscountPrice;
+        return totalDiscountAmount;
     }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+*    if (entry.getKey().getAllCategory().contains(campaign.getCategory())) {
+                int numOfProduct=0;
+                double priceForQuantity=0;
+                for (Map.Entry<ProductComponent, Integer> product : entry.getValue().entrySet()) {
+                    numOfProduct+= product.getValue();
+                    priceForQuantity+= product.getKey().priceForQuantity(product.getValue());
+                }
+                if (campaign.checkMinNumOfProduct(numOfProduct)) {
+                    //urun adeti 5 ve urun fiyati 20 toplam fiyat 5*20=100 indirim orani =%20 toplam toplam indirim=20
+                    totalDiscountAmount = (priceForQuantity * campaign.getDiscount()) / 100d;
+                }
+
+            }*/
 }

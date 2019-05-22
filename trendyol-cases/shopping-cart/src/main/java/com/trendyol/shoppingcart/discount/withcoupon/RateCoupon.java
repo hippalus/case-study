@@ -12,6 +12,6 @@ public class RateCoupon implements ICouponStrategy {
     @Override
     public double calculateCouponDiscount(double totalAmount) {
 
-        return coupon.checkDiscount(totalAmount)?(totalAmount*coupon.getDiscount()/100):0;
+        return coupon.checkDiscount(totalAmount) ? (totalAmount * coupon.getDiscount() / 100) : 0;
     }
 }

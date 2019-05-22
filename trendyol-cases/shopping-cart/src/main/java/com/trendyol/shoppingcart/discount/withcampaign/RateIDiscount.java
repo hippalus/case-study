@@ -25,7 +25,6 @@ public class RateIDiscount implements IDiscountStrategy {
         boolean isParentExists = false;
         /* todo optimize O(n2)  workaround */
         for (Map.Entry<CategoryComponent, Map<ProductComponent, Integer>> entry : groupedProductsByCategory.entrySet()) {
-            //Eger kampanyanin uyguladigi kategoriye ait sub categoriyide iceriyorsa
             if ((entry.getKey().getParentCategory() != null && entry.getKey().getParentCategory().equals(campaign.getCategory()))) {
                 isParentExists = true;
             }
@@ -37,7 +36,6 @@ public class RateIDiscount implements IDiscountStrategy {
                     priceForQuantity += product.getKey().priceForQuantity(product.getValue());
                 }
                 if (campaign.checkMinNumOfProduct(numOfProduct)) {
-                    //urun adeti 5 ve urun fiyati 20 toplam fiyat 5*20=100 indirim orani =%20 toplam toplam indirim=20
                     if (isParentExists)
                         totalDiscountAmount += (priceForQuantity * campaign.getDiscount()) / 100d;
                     else totalDiscountAmount = (priceForQuantity * campaign.getDiscount()) / 100d;

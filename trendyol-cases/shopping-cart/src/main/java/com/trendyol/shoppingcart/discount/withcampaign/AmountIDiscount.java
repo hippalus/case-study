@@ -42,7 +42,6 @@ public class AmountIDiscount implements IDiscountStrategy {
 
                 }
                 if (campaign.checkMinNumOfProduct(totalNumOfProduct)) {
-                    //urun adeti 5 ve utun fiyati 10 toplam fiyat 5*10=50 indirim fiyati =5  toplam indirim =45
                     totalDiscountAmount = (campaign.getDiscount());
                 }
 
